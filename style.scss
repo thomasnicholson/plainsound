@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Plainsound Text";
+    src: url(/PlainsoundText-Regular.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$text-colour: #333;
+$padding: 1rem;
+$hover: #ff0000;
+$link: #990000;
+$footer: 30px;
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Plainsound Text', Arial, sans-serif;
+    line-height: 1.6;
+    color: $text-colour;
+    background-color: #fafafa;
+    padding: $padding;
+}
+
+.wrapper {
+    min-height: calc(100vh - $footer - $padding - $padding);
+}
+
+header {
+    text-align: center;
+    // margin: 2rem 0;
+
+    h1 {
+        font-size: calc((100vw - $padding - $padding)/7.9);
+        letter-spacing: calc((100vw - $padding - $padding)/33);
+        font-weight: normal;
+        line-height: 1.2;
+
+        a {
+            text-decoration: none;
+            color: $text-colour;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+    
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    // border-bottom: 1px solid black;
+
+    a {
+        text-decoration: none;
+        color: $text-colour;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    padding: 3rem 0;
+    margin: 0 auto;
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.artists {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    height: $footer;
+}
