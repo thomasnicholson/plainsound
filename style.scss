@@ -38,10 +38,27 @@ header {
     // margin: 2rem 0;
 
     h1 {
-        font-size: calc((100vw - $padding - $padding)/7.9);
-        letter-spacing: calc((100vw - $padding - $padding)/33);
+        width: 100%;
+        font-size: 8rem;
+        letter-spacing: 1rem;
         font-weight: normal;
         line-height: 1.2;
+
+        @media screen and (max-width: 1015px) {
+            font-size: 6rem;
+            letter-spacing: 0.8rem;
+            
+        }
+
+        @media screen and (max-width: 775px) {
+            font-size: 4rem;
+            letter-spacing: 0.5rem;
+        }
+
+        @media screen and (max-width: 540px) {
+            font-size: 2.5rem;
+            letter-spacing: 0.2rem;
+        }
 
         a {
             text-decoration: none;

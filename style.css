@@ -30,10 +30,29 @@ header {
   text-align: center;
 }
 header h1 {
-  font-size: calc((100vw - 1rem - 1rem) / 7.9);
-  letter-spacing: calc((100vw - 1rem - 1rem) / 33);
+  width: 100%;
+  font-size: 8rem;
+  letter-spacing: 1rem;
   font-weight: normal;
   line-height: 1.2;
+}
+@media screen and (max-width: 1015px) {
+  header h1 {
+    font-size: 6rem;
+    letter-spacing: 0.8rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  header h1 {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
 }
 header h1 a {
   text-decoration: none;
